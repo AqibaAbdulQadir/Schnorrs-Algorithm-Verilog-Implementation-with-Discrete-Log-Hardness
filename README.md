@@ -17,23 +17,23 @@ were not fully explored in this version. As a result, some arithmetic units are 
 independently rather than being time-multiplexed.
 
 ## Directory Structure
-.
-├── src/                      # Verilog source files
-│   ├── schnorr.v             # Top-level Schnorr signature module
-│   ├── key_gen.v             # Key generation logic
-│   ├── sign_gen.v            # Schnorr signature generation
-│   ├── sign_ver.v            # Schnorr signature verification
-│   ├── prng.v                # Pseudo-random number generator
-│   ├── lfsr.v                # LFSR-based entropy source
-│   ├── mod_add.v             # Modular addition
-│   ├── mod_mul.v             # Modular multiplication
-│   ├── mod_exp.v             # Modular exponentiation
-│   └── parameters.vh         # Global cryptographic parameters
-│
-├── sim/                      # Simulation and verification
-│   ├── tb_mod_arith.v        # Testbench for modular arithmetic units
-│   ├── tb_prng.v             # Testbench for PRNG
-│   └── tb_schnorr.v          # End-to-end Schnorr testbench
+    .
+    ├── src/                      # Verilog source files
+    │   ├── schnorr.v             # Top-level Schnorr signature module
+    │   ├── key_gen.v             # Key generation logic
+    │   ├── sign_gen.v            # Schnorr signature generation
+    │   ├── sign_ver.v            # Schnorr signature verification
+    │   ├── prng.v                # Pseudo-random number generator
+    │   ├── lfsr.v                # LFSR-based entropy source
+    │   ├── mod_add.v             # Modular addition
+    │   ├── mod_mul.v             # Modular multiplication
+    │   ├── mod_exp.v             # Modular exponentiation
+    │   └── parameters.vh         # Global cryptographic parameters
+    │
+    ├── sim/                      # Simulation and verification
+    │   ├── tb_mod_arith.v        # Testbench for modular arithmetic units
+    │   ├── tb_prng.v             # Testbench for PRNG
+    │   └── tb_schnorr.v          # End-to-end Schnorr testbench
 
 ## Module Overview
 
